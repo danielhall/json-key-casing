@@ -1,0 +1,24 @@
+{
+  "name": "json-key-casing",
+  "version": "1.0.0",
+  "description": "Change the casing on the keys of a JSON file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielhall/json-key-casing.git"
+  },
+  "keywords": [
+    "json",
+    "key",
+    "casing"
+  ],
+  "author": "Daniel Hall <daniel.jh310@gmail.com> (danieljohnhall.co.uk)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielhall/json-key-casing/issues"
+  },
+  "homepage": "https://github.com/danielhall/json-key-casing#readme"
+}
