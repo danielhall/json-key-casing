@@ -1,0 +1,16 @@
+{
+    "propertyOne": 1,
+    "propertyTwo": "ValueTwo",
+    "nestedObject": {
+        "nestedObjectProperty": [
+            {
+                "arrayProperty1": 1,
+                "arrayProperty2": "Two2!"
+            },
+            {
+                "arrayProperty1": 2,
+                "arrayProperty2": "Two2!"
+            }
+        ]
+    }
+}

@@ -16,7 +16,10 @@
     "casing"
   ],
   "author": "Daniel Hall <daniel.jh310@gmail.com> (danieljohnhall.co.uk)",
-  "license": "ISC",
+  "dependencies": {
+    "case": ">= 1.4.1"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/danielhall/json-key-casing/issues"
   },
