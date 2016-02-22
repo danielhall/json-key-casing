@@ -1,6 +1,6 @@
 {
   "name": "json-key-casing",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Change the casing on the keys of a JSON file",
   "main": "index.js",
   "scripts": {
