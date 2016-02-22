@@ -6,7 +6,7 @@ This Node.js package is designed to iterate through multiple JSON files (or an e
 
 This package can be used to convert the cases on a single file, multiple array of files, or directory of files. Examples on how to achieve each of these are detailed below.
 
-## Single File
+### Single File
 
 ```javascript
 var jsonKeyCasing = require('json-key-casing');
