@@ -1,27 +1,19 @@
 {
   "name": "json-key-casing",
-  "version": "1.0.5",
-  "description": "Change the casing on the keys of a JSON file",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.0.0",
+  "description": "JsonKeyCasing",
+  "main": "app.js",
+  "author": {
+    "name": "Daniel Hall"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/danielhall/json-key-casing.git"
-  },
-  "keywords": [
-    "json",
-    "key",
-    "casing"
-  ],
-  "author": "Daniel Hall <daniel.jh310@gmail.com> (danieljohnhall.co.uk)",
   "dependencies": {
-    "case": ">= 1.4.1"
+    "case": "^1.4.1"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/danielhall/json-key-casing/issues"
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "jasmine-node": "^1.16.2"
   },
-  "homepage": "https://github.com/danielhall/json-key-casing#readme"
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node spec"
+  }
 }

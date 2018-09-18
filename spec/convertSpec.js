@@ -1,7 +1,7 @@
-﻿// unitTests.js
-// =============
+﻿// convertSpec.js
+// ==============
 
-var jsonKeyCasing = require('../app/jsonKeyCasing');
+var jsonKeyCasing = require('../lib/convert');
 
 describe("Given valid json for conversion", function () {
     it('should convert to upper case', function (done) {

@@ -1,5 +1,7 @@
 # JSON Key Casing
 
+TODO: Re-write this README
+
 This Node.js package is designed to iterate through multiple JSON files (or an entire directory of JSON files), and change the casing of all keys in each file.
 
 ## Usage

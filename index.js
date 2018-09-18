@@ -1,1 +1,1 @@
-module.exports = require('./lib/jsonKeyCasing');
+module.exports = require('./lib/convert');
