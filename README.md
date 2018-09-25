@@ -21,7 +21,7 @@ var caseConverter = require('json-key-casing');
 
 var customers = '[{ \'name\': \'Sue\', \'location\': \'UK\' }, { \'name\': \'Mike\', \'location\': \'US\' }]';
 
-Console.Log(caseConverter.convert(customers, 'upper', true));
+console.log(caseConverter.convert(customers, 'upper', true));
 
 ```
 
