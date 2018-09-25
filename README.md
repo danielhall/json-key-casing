@@ -6,7 +6,7 @@ The revised version of this package has largely been simplified, as I have taken
 
 ## Usage
 
-The package exposes one method, called `convert`.
+The package exposes one function, called `convert`.
 
 It has three parameters:
 1. `jsonString`: String. The original JSON string that you want to convert.
@@ -16,13 +16,11 @@ It has three parameters:
 ### Converting JSON
 
 ```javascript
-
 var caseConverter = require('json-key-casing');
 
-var customers = '[{ \'name\': \'Sue\', \'location\': \'UK\' }, { \'name\': \'Mike\', \'location\': \'US\' }]';
+var customers = '[{ "name": "Sue", "location": "UK" }, { "name": "Mike", "location": "US" }]';
 
 console.log(caseConverter.convert(customers, 'upper', true));
-
 ```
 
 ## Case Names
@@ -40,7 +38,3 @@ The app currently supports the following case names:
 * title
 * capital
 * sentence
-
-## Warning
-
-This app will edit the files you provide under the given directory name or file paths. You may want to create a copy of these files as a backup, before you run the app, incase you need to revert to the original.
