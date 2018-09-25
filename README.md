@@ -1,60 +1,28 @@
 # JSON Key Casing
 
-TODO: Re-write this README
+This simple Node.js package will convert the casing of the key/element names in your JSON.
 
-This Node.js package is designed to iterate through multiple JSON files (or an entire directory of JSON files), and change the casing of all keys in each file.
+The revised version of this package has largely been simplified, as I have taken out all functionality to read and save JSON in files, in favour of seperating out concerns. There are plenty of Node packages that manipulate files.
 
 ## Usage
 
-This package can be used to convert the cases on a single file, multiple array of files, or directory of files. Examples on how to achieve each of these are detailed below.
+The package exposes one method, called `convert`.
 
-### Single File
+It has three parameters:
+1. `jsonString`: String. The original JSON string that you want to convert.
+2. `caseName`: String. The name of the casing you want to convert the JSON keys into. See Case Names section below.
+3. `prettify`: Bool. The package deconstructs the JSON and builds it again. If this is set to true, the output will be prettified.
 
-```javascript
-var jsonKeyCasing = require('json-key-casing');
-
-jsonKeyCasing({
-	files: 'json/sample.json', // A single path can be provided.
-	caseName: 'camel', // Specify the name of the case you want the file keys to be converted to.
-    convertRequiredArray: true // If you're converting JSON schema, you may want to change the case of the string values in the 'required' array, as these are key names.
-}, function(success, error) {
-    // Callback function supported.
-	console.log('Success: ' + success);
-	console.log('Error: ' + JSON.stringify(error));
-});
-```
-
-### Multiple Array of Files
+### Converting JSON
 
 ```javascript
-var jsonKeyCasing = require('json-key-casing');
 
-jsonKeyCasing({
-	files: ['json/sample.json', 'elsewhere/sample2.json'], // An array of files can be provided.
-	caseName: 'pascal',
-    convertRequiredArray: false
-}, function(success, error) {
-    // Callback function supported.
-	console.log('Success: ' + success);
-	console.log('Error: ' + JSON.stringify(error));
-});
-```
+var caseConverter = require('json-key-casing');
 
-### Single Directory of Files
+var customers = '[{ \'name\': \'Sue\', \'location\': \'UK\' }, { \'name\': \'Mike\', \'location\': \'US\' }]';
 
-```javascript
-var jsonKeyCasing = require('json-key-casing');
+Console.Log(caseConverter.convert(customers, 'upper', true));
 
-jsonKeyCasing({
-	directory: './JsonFiles/Examples', // A directory path can be provided. Any .json file in here will be converted.
-    searchSubdirectories: true, // If you want the app to convert files in sub-directories, use this.
-	caseName: 'pascal',
-    convertRequiredArray: false
-}, function(success, error) {
-    // Callback function supported.
-	console.log('Success: ' + success);
-	console.log('Error: ' + JSON.stringify(error));
-});
 ```
 
 ## Case Names
