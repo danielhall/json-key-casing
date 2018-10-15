@@ -6,6 +6,10 @@
   "author": {
     "name": "Daniel Hall"
   },
+  "homepage": "https://github.com/danielhall/json-key-casing",
+  "bugs": {
+    "url": "https://github.com/danielhall/json-key-casing/issues"
+  },
   "dependencies": {
     "case": "^1.4.1"
   },
